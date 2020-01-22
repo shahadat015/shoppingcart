@@ -1,0 +1,39 @@
+{
+    "name": "shahadat/shoppingcart",
+    "description": "A light weight shopping cart package for Laravel",
+    "keywords": ["laravel", "shoppingcart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shahadat Hossain",
+            "email": "shahadat015@yahoo.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~5.0 || ~6.0 || ~7.0",
+        "mockery/mockery": "~0.9.0",
+        "orchestra/testbench": "~3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shahadat\\Shoppingcart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Shahadat\\Tests\\Shoppingcart\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shahadat\\Shoppingcart\\ShoppingcartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Shahadat\\Shoppingcart\\Facades\\Cart"
+            }
+        }
+    }
+}
